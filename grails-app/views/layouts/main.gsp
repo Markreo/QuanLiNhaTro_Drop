@@ -1,34 +1,58 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Quan Li Nha Tro"/></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        <!--Style Sheet-->
-        <link href="${resource(dir: 'assets/css', file: 'bootstrap.css')}" rel="stylesheet"/>
-        <link href="${resource(dir: 'assets/css', file: 'bootstrap.min.css')}" rel="stylesheet"/>
-        <link href="${resource(dir: 'assets/css', file: 'sidebar.css')}" rel="stylesheet"/>
-        <!--Fonts-->
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Quản lí nhà trọ</title>
 
-        <!--Script-->
-        <script src="${resource(dir: 'assets/js', file: 'bootstrap.js')}"></script>
-        <script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
-        <script src="${resource(dir: 'assets/js', file: 'jquery-3.1.0.min.js')}"></script>
+    <meta name="description" content="blank page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="${resource(dir: 'assets/css', file: 'bootstrap.min.css')}" rel="stylesheet"/>
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="${resource(dir: 'assets/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
+    <link href="${resource(dir: 'assets/css', file: 'weather-icons.min.css')}" rel="stylesheet"/>
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300"
+          rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <link href="${resource(dir: 'assets/css', file: 'demo.min.css')}" rel="stylesheet"/>
+    <link href="${resource(dir: 'assets/css', file: 'typicons.min.css')}" rel="stylesheet"/>
+    <link href="${resource(dir: 'assets/css', file: 'animate.min.css')}" rel="stylesheet"/>
+
+    <!--script-->
+    <script src="${resource(dir: 'assets/js', file: 'skins.min.js')}"></script>
+    <script src="${resource(dir: 'assets/js', file: 'jquery.min.js')}"></script>
+    <script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
+    <script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
 
 
-		<g:layoutHead/>
-	</head>
-	<body>
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.min.js"></script>
+</head>
+
+<body>
+<sec:ifLoggedIn>
     <g:render template="/layouts/navbar"/>
-    <g:render template="/layouts/sidebar"/>
-    <div id="main-content">
-        <g:layoutBody/>
+    <div class="main-container container-fluid">
+        <div class="page-container">
+            <g:render template="/layouts/sidebar"/>
+            <div class="page-content">
+                <g:layoutBody/>
+            </div>
+        </div>
+        <div id="chatboxs-bound" style="position: fixed; bottom: 0; right: 0;"></div>
     </div>
-	</body>
+    <g:render template="/layouts/footer"/>
+</sec:ifLoggedIn>
 </html>

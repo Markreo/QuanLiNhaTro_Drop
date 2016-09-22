@@ -1,122 +1,400 @@
-<!--sidebar-->
-<div class="row">
-    <!-- uncomment code for absolute positioning tweek see top comment in css -->
-    <!-- <div class="absolute-wrapper"> </div> -->
-    <!-- Menu -->
-    <div class="side-menu">
+<!-- Page Sidebar -->
+<div class="page-sidebar" id="sidebar">
+    <!-- Page Sidebar Header-->
+    <div class="sidebar-header-wrapper">
+        <input type="text" class="searchinput" />
+        <i class="searchicon fa fa-search"></i>
+        <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+    </div>
+    <!-- /Page Sidebar Header -->
+    <!-- Sidebar Menu -->
+    <ul class="nav sidebar-menu">
+        <!--Dashboard-->
+    <li>
+        <a href="${createLink(controller: 'home', action: 'index')}">
+            <i class="menu-icon fa fa-windows"></i>
+            <span class="menu-text"> Dashboard </span>
+        </a>
+    </li>
+    <li>
+        <a href="${createLink(controller: 'phongTro', action: 'index')}">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Phòng Trọ </span>
+        </a>
+    </li>
+        <!--Databoxes-->
+        %{--<li>
+            <a href="databoxes.html">
+                <i class="menu-icon glyphicon glyphicon-tasks"></i>
+                <span class="menu-text"> Data Boxes </span>
+            </a>
+        </li>
+        <!--Widgets-->
+        <li>
+            <a href="widgets.html">
+                <i class="menu-icon fa fa-th"></i>
+                <span class="menu-text"> Widgets </span>
+            </a>
+        </li>
+        <!--UI Elements-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-desktop"></i>
+                <span class="menu-text"> Elements </span>
 
-        <nav class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <div class="brand-wrapper">
-                    <!-- Hamburger -->
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <i class="menu-expand"></i>
+            </a>
 
-                    <!-- Brand -->
-                    <div class="brand-name-wrapper">
-                        <a class="navbar-brand" href="#">
-                            Brand
-                        </a>
-                    </div>
-
-                    <!-- Search -->
-                    <a data-toggle="collapse" href="#search" class="btn btn-default" id="search-trigger">
-                        <span class="glyphicon glyphicon-search"></span>
+            <ul class="submenu">
+                <li>
+                    <a href="elements.html">
+                        <span class="menu-text">Basic Elements</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-dropdown">
+                        <span class="menu-text">
+                            Icons
+                        </span>
+                        <i class="menu-expand"></i>
                     </a>
 
-                    <!-- Search body -->
-                    <div id="search" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form class="navbar-form" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                </div>
-                                <button type="submit" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                    <ul class="submenu">
+                        <li>
+                            <a href="font-awesome.html">
+                                <i class="menu-icon fa fa-rocket"></i>
+                                <span class="menu-text">Font Awesome</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="glyph-icons.html">
+                                <i class="menu-icon glyphicon glyphicon-stats"></i>
+                                <span class="menu-text">Glyph Icons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="typicon.html">
+                                <i class="menu-icon typcn typcn-location-outline"></i>
+                                <span class="menu-text"> Typicons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="weather-icons.html">
+                                <i class="menu-icon wi wi-hot"></i>
+                                <span class="menu-text">Weather Icons</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tabs.html">
+                        <span class="menu-text">Tabs & Accordions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="alerts.html">
+                        <span class="menu-text">Alerts & Tooltips</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="modals.html">
+                        <span class="menu-text">Modals & Wells</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="buttons.html">
+                        <span class="menu-text">Buttons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nestable-list.html">
+                        <span class="menu-text"> Nestable List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="treeview.html">
+                        <span class="menu-text">Treeview</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--Tables-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-table"></i>
+                <span class="menu-text"> Tables </span>
 
-            </div>
+                <i class="menu-expand"></i>
+            </a>
 
-            <!-- Main Menu -->
-            <div class="side-menu-container">
-                <ul class="nav navbar-nav">
+            <ul class="submenu">
+                <li>
+                    <a href="tables-simple.html">
+                        <span class="menu-text">Simple & Responsive</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables-data.html">
+                        <span class="menu-text">Data Tables</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--Forms-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text"> Forms </span>
 
-                    <li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+                <i class="menu-expand"></i>
+            </a>
 
-                    <!-- Dropdown-->
-                    <li class="panel panel-default" id="dropdown">
-                        <a data-toggle="collapse" href="#dropdown-lvl1">
-                            <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
-                        </a>
+            <ul class="submenu">
+                <li>
+                    <a href="form-layouts.html">
+                        <span class="menu-text">Form Layouts</span>
+                    </a>
+                </li>
 
-                        <!-- Dropdown level 1 -->
-                        <div id="dropdown-lvl1" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
+                <li>
+                    <a href="form-inputs.html">
+                        <span class="menu-text">Form Inputs</span>
+                    </a>
+                </li>
 
-                                    <!-- Dropdown level 2 -->
-                                    <li class="panel panel-default" id="dropdown">
-                                        <a data-toggle="collapse" href="#dropdown-lvl2">
-                                            <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
-                                        </a>
-                                        <div id="dropdown-lvl2" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <ul class="nav navbar-nav">
-                                                    <li><a href="#">Link</a></li>
-                                                    <li><a href="#">Link</a></li>
-                                                    <li><a href="#">Link</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                <li>
+                    <a href="form-pickers.html">
+                        <span class="menu-text">Data Pickers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form-wizard.html">
+                        <span class="menu-text">Wizard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form-validation.html">
+                        <span class="menu-text">Validation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form-editors.html">
+                        <span class="menu-text">Editors</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--Charts-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-bar-chart-o"></i>
+                <span class="menu-text"> Charts </span>
 
-                    <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+                <i class="menu-expand"></i>
+            </a>
 
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
+            <ul class="submenu">
+                <li>
+                    <a href="flot.html">
+                        <span class="menu-text">Flot Charts</span>
+                    </a>
+                </li>
 
-    </div>
+                <li>
+                    <a href="morris.html">
+                        <span class="menu-text"> Morris Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sparkline.html">
+                        <span class="menu-text">Sparkline Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="easypiecharts.html">
+                        <span class="menu-text">Easy Pie Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chartjs.html">
+                        <span class="menu-text"> ChartJS</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--Profile-->
+        <li>
+            <a href="profile.html">
+                <i class="menu-icon fa fa-picture-o"></i>
+                <span class="menu-text">Profile</span>
+            </a>
+        </li>
+        <!--Mail-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-envelope-o"></i>
+                <span class="menu-text"> Mail </span>
 
+                <i class="menu-expand"></i>
+            </a>
 
+            <ul class="submenu">
+                <li>
+                    <a href="inbox.html">
+                        <span class="menu-text">Inbox</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="message-view.html">
+                        <span class="menu-text">View Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="message-compose.html">
+                        <span class="menu-text">Compose Message</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--Calendar-->
+        <li>
+            <a href="calendar.html">
+                <i class="menu-icon fa fa-calendar"></i>
+                <span class="menu-text">
+                    Calendar
+                </span>
+            </a>
+        </li>
+        <!--Pages-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon glyphicon glyphicon-paperclip"></i>
+                <span class="menu-text"> Pages </span>
+
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="timeline.html">
+                        <span class="menu-text">Timeline</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pricing.html">
+                        <span class="menu-text">Pricing Tables</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="invoice.html">
+                        <span class="menu-text">Invoice</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <span class="menu-text">Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <span class="menu-text">Register</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="lock.html">
+                        <span class="menu-text">Lock Screen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="typography.html">
+                        <span class="menu-text"> Typography </span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--More Pages-->
+        <li class="active open">
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon glyphicon glyphicon-link"></i>
+
+                <span class="menu-text">
+                    More Pages
+                </span>
+
+                <i class="menu-expand"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="error-404.html">
+                        <span class="menu-text">Error 404</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="error-500.html">
+                        <span class="menu-text"> Error 500</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="blank.html">
+                        <span class="menu-text">Blank Page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="grid.html">
+                        <span class="menu-text"> Grid</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-dropdown">
+                        <span class="menu-text">
+                            Multi Level Menu
+                        </span>
+                        <i class="menu-expand"></i>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                <i class="menu-icon fa fa-camera"></i>
+                                <span class="menu-text">Level 3</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-dropdown">
+                                <i class="menu-icon fa fa-asterisk"></i>
+
+                                <span class="menu-text">
+                                    Level 4
+                                </span>
+                                <i class="menu-expand"></i>
+                            </a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">
+                                        <i class="menu-icon fa fa-bolt"></i>
+                                        <span class="menu-text">Some Item</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="menu-icon fa fa-bug"></i>
+                                        <span class="menu-text">Another Item</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        --}%
+    </ul>
+    <!-- /Sidebar Menu -->
 </div>
-<!--end sidebar-->
-<script>
-$(function () {
-    $('.navbar-toggle').click(function () {
-        $('.navbar-nav').toggleClass('slide-in');
-        $('.side-body').toggleClass('body-slide-in');
-        $('#search').removeClass('in').addClass('collapse').slideUp(200);
-
-        /// uncomment code for absolute positioning tweek see top comment in css
-        //$('.absolute-wrapper').toggleClass('slide-in');
-
-    });
-
-   // Remove menu for searching
-   $('#search-trigger').click(function () {
-        $('.navbar-nav').removeClass('slide-in');
-        $('.side-body').removeClass('body-slide-in');
-
-        /// uncomment code for absolute positioning tweek see top comment in css
-        //$('.absolute-wrapper').removeClass('slide-in');
-
-    });
-});
-</script>
