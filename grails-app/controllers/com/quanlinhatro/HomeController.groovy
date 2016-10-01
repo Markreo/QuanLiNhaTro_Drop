@@ -1,8 +1,7 @@
 package com.quanlinhatro
 import grails.plugin.springsecurity.annotation.Secured
 
-@Secured(['IS_AUTHENTICATED_FULLY'])
-class HomeController {
+class HomeController extends BaseController {
 
 
     def index() { }
