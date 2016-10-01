@@ -17,11 +17,42 @@
         </a>
     </li>
     <li>
+        <a href="${createLink(controller: 'chuTro', action: 'index')}">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Chu Tro </span>
+        </a>
+    </li>
+    <li>
+        <a href="${createLink(controller: 'khu', action: 'index')}">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Khu / Day Tro </span>
+        </a>
+    </li>
+    <li>
         <a href="${createLink(controller: 'phongTro', action: 'index')}">
             <i class="menu-icon glyphicon glyphicon-home"></i>
             <span class="menu-text"> Phòng Trọ </span>
         </a>
     </li>
+    <li>
+        <a href="${createLink(controller: 'khachThue', action: 'index')}">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Khach Thue </span>
+        </a>
+    </li><li>
+        <a href="${createLink(controller: 'diaChi', action: 'index')}">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Dia chi </span>
+        </a>
+    </li><li>
+        <a href="${createLink(controller: 'phongTro', action: 'index')}">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Phòng Trọ </span>
+        </a>
+    </li>
+
+
+
         <!--Databoxes-->
         %{--<li>
             <a href="databoxes.html">
