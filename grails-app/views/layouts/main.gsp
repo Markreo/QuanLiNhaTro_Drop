@@ -23,7 +23,7 @@
           rel="stylesheet" type="text/css">
 
     <!--Beyond styles-->
-    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="${resource(dir: 'assets/css', file: 'beyond.min.css')}" rel="stylesheet"/>
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
 
     <link href="${resource(dir: 'assets/css', file: 'demo.min.css')}" rel="stylesheet"/>
@@ -38,7 +38,7 @@
 
 
     <!--Beyond Scripts-->
-    <script src="assets/js/beyond.min.js"></script>
+    <script src="${resource(dir: 'assets/js', file: 'beyond.min.js')}"></script>
 </head>
 
 <body>
