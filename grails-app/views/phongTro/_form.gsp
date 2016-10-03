@@ -33,3 +33,26 @@
 	<label for="tinhTrang">
 		<g:message code="phongTro.tinhTrang.label" default="Tinh Trang" />
 		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="tinhTrang" from="${com.quanlinhatro.PhongTro$TinhTrang?.values()}" keys="${com.quanlinhatro.PhongTro$TinhTrang.values()*.name()}" required="" value="${phongTroInstance?.tinhTrang?.name()}" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: phongTroInstance, field: 'khachThues', 'error')} ">
+	<label for="khachThues">
+		<g:message code="phongTro.khachThues.label" default="Khach Thues" />
+		
+	</label>
+	<g:select name="khachThues" from="${com.quanlinhatro.KhachThue.list()}" multiple="multiple" optionKey="id" size="5" value="${phongTroInstance?.khachThues*.id}" class="many-to-many"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: phongTroInstance, field: 'chiPhi', 'error')} ">
+	<label for="chiPhi">
+		<g:message code="phongTro.chiPhi.label" default="Chi Phi" />
+		
+	</label>
+	<g:select name="chiPhi" from="${com.quanlinhatro.ChiPhi.list()}" multiple="multiple" optionKey="id" size="5" value="${phongTroInstance?.chiPhi*.id}" class="many-to-many"/>
+
+</div>
+

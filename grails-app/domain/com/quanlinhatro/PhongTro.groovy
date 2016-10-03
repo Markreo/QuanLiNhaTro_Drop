@@ -1,6 +1,16 @@
 package com.quanlinhatro
 
 class PhongTro {
+    enum TinhTrang {
+        KHONG(-1, "Null"),
+        TRONG(0, "Đang trống"),
+        DATHUE(1, "Đã thuê"),
+        SUA(2, "Đang sửa"),
+        DATCOC(3, "Đã đặt cọc")
+        int id
+        String name
+        TinhTrang(id, name) {this.id = id; this.name = name}
+    }
 
     String tenPhong
     String ghiChu

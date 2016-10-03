@@ -13,6 +13,8 @@ class BaseController {
 
     def beforeInterceptor = {
         user = springSecurityService.currentUser as User
-        if (user) session.user = user
+        if (user) {
+            session.user = user
+        }
     }
 }
