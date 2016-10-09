@@ -19,13 +19,13 @@
     <li>
         <a href="${createLink(controller: 'chuTro', action: 'index')}">
             <i class="menu-icon glyphicon glyphicon-home"></i>
-            <span class="menu-text"> Chu Tro </span>
+            <span class="menu-text"> Chủ trọ </span>
         </a>
     </li>
     <li>
         <a href="${createLink(controller: 'khu', action: 'index')}">
             <i class="menu-icon glyphicon glyphicon-home"></i>
-            <span class="menu-text"> Khu / Day Tro </span>
+            <span class="menu-text">Khu/Dãy trọ </span>
         </a>
     </li>
     <li>
@@ -37,12 +37,12 @@
     <li>
         <a href="${createLink(controller: 'khachThue', action: 'index')}">
             <i class="menu-icon glyphicon glyphicon-home"></i>
-            <span class="menu-text"> Khach Thue </span>
+            <span class="menu-text"> Khách Thuê </span>
         </a>
     </li><li>
         <a href="${createLink(controller: 'diaChi', action: 'index')}">
             <i class="menu-icon glyphicon glyphicon-home"></i>
-            <span class="menu-text"> Dia chi </span>
+            <span class="menu-text"> Địa Chỉ </span>
         </a>
     </li><li>
         <a href="${createLink(controller: 'phongTro', action: 'index')}">
