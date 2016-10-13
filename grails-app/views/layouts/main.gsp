@@ -35,7 +35,7 @@
     <script src="${resource(dir: 'assets/js', file: 'jquery.min.js')}"></script>
     <script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
     <script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
-
+    <script src="${resource(dir: 'assets/js', file: 'paginate.js')}"></script>
 
     <!--Beyond Scripts-->
     <script src="${resource(dir: 'assets/js', file: 'beyond.min.js')}"></script>

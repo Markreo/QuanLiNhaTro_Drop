@@ -9,9 +9,16 @@ class ChuTroController extends BaseController {
     def index () {
         redirect(action: 'list')
     }
-    
-    def list() 
-    {
-        render(view: 'list', model: [chuTros: ChuTro.list()])
+
+    def create() {
+        render (view : 'edit', model: [chuTro: new ChuTro()])
+    }
+
+    def edit(long id) {
+        def chuTro = ChuTro.get(id)
+        if(chuTro)
+        {
+            render(view: 'edit', model: [chuTro: chuTro])
+        }
     }
 }
