@@ -9,6 +9,7 @@ class ChuTro {
     @BindingFormat('dd-MM-yyyy')
     Date ngaySinh
     String soDienThoai
+    String diaChi
     String email
     User taiKhoan
     static hasMany = [khus:Khu]
@@ -19,7 +20,8 @@ class ChuTro {
         ngaySinh nullable: true
         soDienThoai nullable: true
         khus nullable: true
-        taiKhoan nullable: false
+        taiKhoan nullable: false, unique: true //1 tai khoan chi dang ki dc 1 chu tro
+        diaChi nullable: true
     }
     static mapping = {
         version(false)

@@ -1,104 +1,50 @@
 package com.quanlinhatro
 
+import org.codehaus.groovy.grails.web.json.JSONArray
+import org.codehaus.groovy.grails.web.json.JSONObject
 
-
-import static org.springframework.http.HttpStatus.*
-import grails.transaction.Transactional
-
-@Transactional(readOnly = true)
 class KhuController extends BaseController {
-
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
-
-    def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Khu.list(params), model:[khuInstanceCount: Khu.count()]
+    def index() {
+        redirect(action: 'list')
     }
 
-    def show(Khu khuInstance) {
-        respond khuInstance
+    def list() {
     }
 
-    def create() {
-        respond new Khu(params)
+    def list2() {
+
     }
 
-    @Transactional
-    def save(Khu khuInstance) {
-        if (khuInstance == null) {
-            notFound()
-            return
-        }
-
-        if (khuInstance.hasErrors()) {
-            respond khuInstance.errors, view:'create'
-            return
-        }
-
-        khuInstance.save flush:true
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'khu.label', default: 'Khu'), khuInstance.id])
-                redirect khuInstance
+    def khus(){
+        println("khus")
+        def result = new JSONObject()
+        def aaData = new JSONArray()
+        def khus = Khu.createCriteria().list ([max: params.int("length"), offset: params.int("start"), sort: 'ten', order: 'asc']) {
+            if (params.search) {
+                or {
+                    like('ten', "%${params.search}%")
+                    like('diaChi', "%${params.search}%")
+                }
             }
-            '*' { respond khuInstance, [status: CREATED] }
+            //eq('deleted', false)
         }
-    }
-
-    def edit(Khu khuInstance) {
-        respond khuInstance
-    }
-
-    @Transactional
-    def update(Khu khuInstance) {
-        if (khuInstance == null) {
-            notFound()
-            return
+        khus.each {Khu khu->
+            def arr = new JSONArray()
+            arr.put(khu.ten)
+            arr.put(khu.diaChi)
+            arr.put(khu.phongTros.size())
+            arr.put(""" <a href="${createLink(controller: 'khu', action: 'edit', id: khu.id)}"  class="btn btn-default btn-xs purple"><i class="fa fa-edit"></i>Edit</a>
+                    <a href="${createLink(controller: 'khu', action: 'delete', id: khu.id)}" class="btn btn-default btn-xs red" onclick="return confirm ('Are you sure?')"><i class="fa fa-trash-o"></i>Delete</a>
+                    <a class="btn btn-default btn-xs blue"><i class="fa fa-find"></i>Show</a> """)
+            aaData.put(arr)
         }
 
-        if (khuInstance.hasErrors()) {
-            respond khuInstance.errors, view:'edit'
-            return
-        }
+        int total = khus.totalCount
+        result.put("draw", params.int("draw"))
+        result.put("recordsTotal", total)
+        result.put("recordsFiltered", total)
+        result.put("data", aaData)
 
-        khuInstance.save flush:true
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Khu.label', default: 'Khu'), khuInstance.id])
-                redirect khuInstance
-            }
-            '*'{ respond khuInstance, [status: OK] }
-        }
-    }
-
-    @Transactional
-    def delete(Khu khuInstance) {
-
-        if (khuInstance == null) {
-            notFound()
-            return
-        }
-
-        khuInstance.delete flush:true
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Khu.label', default: 'Khu'), khuInstance.id])
-                redirect action:"index", method:"GET"
-            }
-            '*'{ render status: NO_CONTENT }
-        }
-    }
-
-    protected void notFound() {
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'khu.label', default: 'Khu'), params.id])
-                redirect action: "index", method: "GET"
-            }
-            '*'{ render status: NOT_FOUND }
-        }
+        render(result);
     }
 }

@@ -15,7 +15,7 @@ class PhongTro {
     String tenPhong
     String ghiChu
     Khu khu
-    static hasMany = [khachThues: KhachThue, chiPhi: ChiPhi]
+    static hasMany = [khachThues: KhachThue, chiPhis: ChiPhi]
     TinhTrang tinhTrang
 
 
@@ -25,7 +25,7 @@ class PhongTro {
         khu nullable: false
         tinhTrang nullable: false
         khachThues nullable: true
-        chiPhi nullable: true
+        chiPhis nullable: true
     }
     static mapping = {
         table('PHONG_TRO')
