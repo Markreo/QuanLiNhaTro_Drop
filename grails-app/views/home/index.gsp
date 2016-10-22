@@ -13,6 +13,7 @@
             <li><a href="buysalerent.php">Buy</a></li>
             <li><a href="buysalerent.php">Sale</a></li>
             <li><a href="buysalerent.php">Rent</a></li>
+            <li><button class="btn btn-info"   data-toggle="modal" data-target="#loginpop">Đăng nhập</button> </li>
         </ul>
     </div>
     <!-- #Header Starts -->
@@ -142,7 +143,7 @@
                 </div>
                 <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
                     <p>Join now and get updated with all the properties deals.</p>
-                    <button class="btn btn-info"   data-toggle="modal" data-target="#loginpop">Login</button>        </div>
+                           </div>
             </div>
         </div>
     </div>

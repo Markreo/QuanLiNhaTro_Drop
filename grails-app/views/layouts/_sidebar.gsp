@@ -11,7 +11,7 @@
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
     <li>
-        <a href="${createLink(controller: 'home', action: 'index')}">
+        <a href="${createLink(controller: 'home', action: 'dashboard')}">
             <i class="menu-icon fa fa-windows"></i>
             <span class="menu-text"> Dashboard </span>
         </a>

@@ -123,28 +123,40 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-sm-6 login">
-                    <h4>Login</h4>
-                    <form class="" role="form">
+                    <h4>Đăng Nhập</h4>
+                    <g:if test='${flash.message}'>
+                        <div class='login_message'>${flash.message}</div>
+                    </g:if>
+
+                    <form action='j_spring_security_check' method='POST' id='loginForm' class='form' autocomplete='off' id="login-nav">
                         <div class="form-group">
-                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                            <label class="sr-only">Tài khoản</label>
+                            <input type='text' class='form-control' name='j_username' id='username' placeholder="Tài khoản"/>
                         </div>
+
                         <div class="form-group">
-                            <label class="sr-only" for="exampleInputPassword2">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                            <label class="sr-only" >Mật Khẩu</label>
+                            <input type='password' class='form-control' name='j_password' id='password' placeholder="Mật khẩu"/>
+                            <div class="help-block text-right"><a href="">Quên mật khẩu?</a></div>
                         </div>
+
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox"> Remember me
+                                <input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me' <g:if test='${hasCookie}'>checked='checked'</g:if>/> Giữ tôi luôn đăng nhập
                             </label>
+
                         </div>
-                        <button type="submit" class="btn btn-success">Sign in</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                        </div>
+
                     </form>
+
                 </div>
                 <div class="col-sm-6">
-                    <h4>New User Sign Up</h4>
-                    <p>Join today and get updated with all the properties deal happening around.</p>
-                    <button type="submit" class="btn btn-info"  onclick="window.location.href='register.php'">Join Now</button>
+                    <h4>Đăng kí người dùng mới</h4>
+                    <p>Thử nghiệm ứng dụng quản lí phòng trọ</p>
+                    <button type="submit" class="btn btn-info"  onclick="window.location.href='register.php'">Đăng kí</button>
                 </div>
 
             </div>

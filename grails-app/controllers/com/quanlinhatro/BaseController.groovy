@@ -8,7 +8,6 @@ class BaseController {
 
     def springSecurityService
     User user
-    def systemService
 
 
     def beforeInterceptor = {
