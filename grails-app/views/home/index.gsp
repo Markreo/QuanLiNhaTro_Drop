@@ -10,9 +10,9 @@
         <a href="index.php"><img src="images/logo.png" alt="Realestate"></a>
 
         <ul class="pull-right">
-            <li><a href="buysalerent.php">Buy</a></li>
-            <li><a href="buysalerent.php">Sale</a></li>
-            <li><a href="buysalerent.php">Rent</a></li>
+            <li><a href="buysalerent.php">Trang chủ</a></li>
+            <li><a href="buysalerent.php">Chủ trọ</a></li>
+            <li><a href="buysalerent.php">Khách Thuê</a></li>
             <li><button class="btn btn-info"   data-toggle="modal" data-target="#loginpop">Đăng nhập</button> </li>
         </ul>
     </div>
