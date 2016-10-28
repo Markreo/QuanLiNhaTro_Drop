@@ -15,7 +15,7 @@ environments {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://localhost/quanlinhatro"
             username = "root"
-            password = ""
+            password = "123456"
         }
     }
     test {
@@ -23,7 +23,7 @@ environments {
             dbCreate = "update"
             url = "jdbc:mysql://localhost/sec_treasurer_prod?useUnicode=yes&characterEncoding=UTF-8"
             username = "root"
-            password = "root"
+            password = ""
         }
     }
     production {
@@ -31,7 +31,7 @@ environments {
             dbCreate = "update"
             url = "jdbc:mysql://localhost/sec_treasurer_prod?useUnicode=yes&characterEncoding=UTF-8"
             username = "root"
-            password = "root"
+            password = ""
         }
     }
 }

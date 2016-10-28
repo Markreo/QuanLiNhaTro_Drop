@@ -8,7 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>Realestate Bootstrap Theme </title>
+    <title>Hệ Thống Nhà Trọ</title>
+    <link rel="icon" href="images/home.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -76,40 +77,46 @@
 
         <div class="row">
             <div class="col-lg-3 col-sm-3">
-                <h4>Information</h4>
+                <h4>Thông Tin</h4>
                 <ul class="row">
-                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="about.php">About</a></li>
-                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="agents.php">Agents</a></li>
-                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="blog.php">Blog</a></li>
-                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="contact.php">Contact</a></li>
+                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="about.php">Về chúng tôi</a></li>
+                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="blog.php">Bài viết</a></li>
+                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="contact.php">Liên hệ</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-3 col-sm-3">
-                <h4>Newsletter</h4>
-                <p>Get notified about the latest properties in our marketplace.</p>
+                <h4>Theo dõi</h4>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="col-lg-3 col-sm-3">
+                <h4>Liên hệ</h4>
+                <p><b>HG Company Inc.</b><br>
+                    <span class="glyphicon glyphicon-map-marker"></span> HCM, VietNam <br>
+                    <span class="glyphicon glyphicon-envelope"></span> hg@hg.inte.com<br>
+                    <span class="glyphicon glyphicon-earphone"></span> (84) 123-456-7890</p>
+            </div>
+            
+            <div class="col-lg-3 col-sm-3">
+                <h4>Gửi thư</h4>
+                <p>Hãy liên hệ chúng tôi qua email.</p>
                 <form class="form-inline" role="form">
-                    <input type="text" placeholder="Enter Your email address" class="form-control">
-                    <button class="btn btn-success" type="button">Notify Me!</button></form>
-            </div>
-
-            <div class="col-lg-3 col-sm-3">
-                <h4>Follow us</h4>
-                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
-                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
-                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
-            </div>
-
-            <div class="col-lg-3 col-sm-3">
-                <h4>Contact us</h4>
-                <p><b>Bootstrap Realestate Inc.</b><br>
-                    <span class="glyphicon glyphicon-map-marker"></span> 8290 Walk Street, Australia <br>
-                    <span class="glyphicon glyphicon-envelope"></span> hello@bootstrapreal.com<br>
-                    <span class="glyphicon glyphicon-earphone"></span> (123) 456-7890</p>
+                    <div class="col-md-12" >
+                        <div class="col-md-10">
+                            <input type="text" placeholder="Nhập email của bạn" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn" type="button">Gửi</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <p class="copyright">Copyright 2013. All rights reserved.	</p>
+        <p class="text-center" >Copyright 2016. All rights reserved.	</p>
 
 
     </div></div>
@@ -164,10 +171,5 @@
     </div>
 </div>
 <!-- /.modal -->
-
-
-
 </body>
 </html>
-
-

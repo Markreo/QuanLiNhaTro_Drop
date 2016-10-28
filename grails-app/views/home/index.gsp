@@ -3,11 +3,32 @@
     <meta name="layout" content="realestate"/>
 </head>
 <body>
-<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a href="index.php"><img src="images/logo.png" alt="LOGO"></a>
+        </div>
+        <div id="my-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right" style="padding-top: 1%;padding-right: 5%;">
+                <li><a href="buysalerent.php">TRANG CHỦ</a></li>
+                <li><a href="buysalerent.php">CHỦ TRỌ</a></li>
+                <li><a href="buysalerent.php">KHÁCH THUÊ</a></li>
+                <li><button class="btn btn-info"   data-toggle="modal" data-target="#loginpop">Đăng nhập</button></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+ 
+<!--<div class="container">
 
-    <!-- Header Starts -->
+    
     <div class="header">
-        <a href="index.php"><img src="images/logo.png" alt="Realestate"></a>
+        <a href="index.php"><img src="images/logo.png" alt="LOGO"></a>
 
         <ul class="pull-right">
             <li><a href="buysalerent.php">Trang chủ</a></li>
@@ -16,8 +37,56 @@
             <li><button class="btn btn-info"   data-toggle="modal" data-target="#loginpop">Đăng nhập</button> </li>
         </ul>
     </div>
-    <!-- #Header Starts -->
+    
 </div>
+<!--
+class="banner-search"
+POSITION: relative;
+    padding-top: 10%;
+-->
+    <div class="banner-search" style="position: relative;padding-top: 12%;">
+    <div class="container">
+        <!-- banner -->
+        <!--<h3>Buy, Sale & Rent</h3>-->
+        <div class="searchbar">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                   <div class="col-lg-3 col-sm-3">
+                   </div>
+                   <div class="col-lg-9 col-sm-9">
+                        <div class="col-md-9">
+                            
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="Nhập từ khóa muốn tìm">
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-success"  onclick="window.location.href='buysalerent.php'">Tìm Kiếm</button>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-12">
+                        <div class="col-lg-4 col-sm-4 ">
+                            <select class="form-control">
+                                <option>Nhà Trọ</option>
+                                <option>Nhà Nguyên Căn</option>
+                                <option>Căn Hộ</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <select class="form-control">
+                                <option>Giá</option>
+                                <option>1,000,000</option>
+                                <option>2,000,000</option>
+                                <option>5,000,000</option>
+                            </select>
+                        </div>
+                        </div>-->
+                    </div>
+                 </div>   
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="">
 
 
@@ -28,59 +97,59 @@
             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-1"></div>
-                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Aparment on Sale</a></h2>
+                    <h2><a href="#">2 Phòng Ngủ</a></h2>
                     <blockquote>
-                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey, Australia</p>
-                        <p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
-                        <cite>$ 20,000,000</cite>
+                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 2016 HCM, VIETNAM</p>
+                        <p>Nhà rộng thoáng mát.</p>
+                        <cite> 2,000,000 VND</cite>
                     </blockquote>
                 </div>
             </div>
 
-            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
-                    <div class="bg-img bg-img-2"></div>
-                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Aparment on Sale</a></h2>
+                    <div class="bg-img bg-img-1"></div>
+                    <h2><a href="#">2 Phòng Ngủ</a></h2>
                     <blockquote>
-                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey, Australia</p>
-                        <p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
-                        <cite>$ 20,000,000</cite>
+                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 2016 HCM, VIETNAM</p>
+                        <p>Nhà rộng thoáng mát.</p>
+                        <cite> 2,000,000 VND</cite>
                     </blockquote>
                 </div>
             </div>
 
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
-                    <div class="bg-img bg-img-3"></div>
-                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Aparment on Sale</a></h2>
+                    <div class="bg-img bg-img-1"></div>
+                    <h2><a href="#">2 Phòng Ngủ</a></h2>
                     <blockquote>
-                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey, Australia</p>
-                        <p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
-                        <cite>$ 20,000,000</cite>
+                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 2016 HCM, VIETNAM</p>
+                        <p>Nhà rộng thoáng mát.</p>
+                        <cite> 2,000,000 VND</cite>
                     </blockquote>
                 </div>
             </div>
 
-            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
-                    <div class="bg-img bg-img-4"></div>
-                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Aparment on Sale</a></h2>
+                    <div class="bg-img bg-img-1"></div>
+                    <h2><a href="#">2 Phòng Ngủ</a></h2>
                     <blockquote>
-                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey, Australia</p>
-                        <p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
-                        <cite>$ 20,000,000</cite>
+                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 2016 HCM, VIETNAM</p>
+                        <p>Nhà rộng thoáng mát.</p>
+                        <cite> 2,000,000 VND</cite>
                     </blockquote>
                 </div>
             </div>
 
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
-                    <div class="bg-img bg-img-5"></div>
-                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Aparment on Sale</a></h2>
+                    <div class="bg-img bg-img-1"></div>
+                    <h2><a href="#">2 Phòng Ngủ</a></h2>
                     <blockquote>
-                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey, Australia</p>
-                        <p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
-                        <cite>$ 20,000,000</cite>
+                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 2016 HCM, VIETNAM</p>
+                        <p>Nhà rộng thoáng mát.</p>
+                        <cite> 2,000,000 VND</cite>
                     </blockquote>
                 </div>
             </div>
@@ -101,144 +170,99 @@
 
 
 
-<div class="banner-search">
-    <div class="container">
-        <!-- banner -->
-        <h3>Buy, Sale & Rent</h3>
-        <div class="searchbar">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <input type="text" class="form-control" placeholder="Search of Properties">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-3 ">
-                            <select class="form-control">
-                                <option>Buy</option>
-                                <option>Rent</option>
-                                <option>Sale</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-3 col-sm-4">
-                            <select class="form-control">
-                                <option>Price</option>
-                                <option>$150,000 - $200,000</option>
-                                <option>$200,000 - $250,000</option>
-                                <option>$250,000 - $300,000</option>
-                                <option>$300,000 - above</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-3 col-sm-4">
-                            <select class="form-control">
-                                <option>Property</option>
-                                <option>Apartment</option>
-                                <option>Building</option>
-                                <option>Office Space</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-3 col-sm-4">
-                            <button class="btn btn-success"  onclick="window.location.href='buysalerent.php'">Find Now</button>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
-                    <p>Join now and get updated with all the properties deals.</p>
-                           </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- banner -->
 <div class="container">
-    <div class="properties-listing spacer"> <a href="buysalerent.php" class="pull-right viewall">View All Listing</a>
-        <h2>Featured Properties</h2>
+    <div class="properties-listing spacer"> <a href="buysalerent.php" class="pull-right viewall">Xem Tất Cả</a>
+        <h2>Thông Tin</h2>
         <div id="owl-example" class="owl-carousel">
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/>
-                    <div class="status sold">Sold</div>
+                    <div class="status sold">Còn phòng</div>
                 </div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Nhà Trọ-Phòng Đơn</a></h4>
+                <p class="price">Giá: 5,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/>
-                    <div class="status new">New</div>
+                    <div class="status new">Mới</div>
                 </div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
-            </div>
-            <div class="properties">
-                <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
-            </div>
-            <div class="properties">
-                <div class="image-holder"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
-            </div>
-            <div class="properties">
-                <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/>
-                    <div class="status sold">Sold</div>
-                </div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
-            </div>
-            <div class="properties">
-                <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/>
-                    <div class="status sold">Sold</div>
-                </div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Nhà Nguyên Căn</a></h4>
+                <p class="price">Giá: 10,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/>
-                    <div class="status new">New</div>
+                    <div class="status new">Đã sử dụng</div>
                 </div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Căn Hộ</a></h4>
+                <p class="price">Giá: 15,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Biệt Thự</a></h4>
+                <p class="price">Giá: 25,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
+            </div>
+            <div class="properties">
+                <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/>
+                    <div class="status sold">Cũ</div>
+                </div>
+                <h4><a href="property-detail.php">Nhà Trọ-Phòng Đôi</a></h4>
+                <p class="price">Giá: 5,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
+            </div>
+            <div class="properties">
+                <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/>
+                    <div class="status sold">Cũ</div>
+                </div>
+                <h4><a href="property-detail.php">Biệt Thự</a></h4>
+                <p class="price">Giá: 25,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
+            </div>
+            <div class="properties">
+                <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/>
+                    <div class="status new">Mới</div>
+                </div>
+                <h4><a href="property-detail.php">Nhà Trọ-Phòng Đôi</a></h4>
+                <p class="price">Giá: 5,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
+            </div>
+            <div class="properties">
+                <div class="image-holder"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
+                 <h4><a href="property-detail.php">Căn Hộ</a></h4>
+                <p class="price">Giá: 15,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/></div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Nhà Nguyên Căn</a></h4>
+                <p class="price">Giá: 10,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/></div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Nhà Trọ-Phòng Đơn</a></h4>
+                <p class="price">Giá: 5,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
             <div class="properties">
                 <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
-                <h4><a href="property-detail.php">Royal Inn</a></h4>
-                <p class="price">Price: $234,900</p>
-                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                <a class="btn btn-primary" href="property-detail.php">View Details</a>
+                <h4><a href="property-detail.php">Nhà Nguyên Căn</a></h4>
+                <p class="price">Giá: 10,000,000</p>
+                <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Ngủ">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Phòng Khách">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Nhà vệ sinh">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Bếp">1</span> </div>
+                <a class="btn btn-primary" href="property-detail.php">Chi tiết</a>
             </div>
 
         </div>
@@ -246,12 +270,12 @@
     <div class="spacer">
         <div class="row">
             <div class="col-lg-6 col-sm-9 recent-view">
-                <h3>About Us</h3>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<br><a href="about.php">Learn More</a></p>
+                <h3>Về Chúng Tôi</h3>
+                <p>Công ty HG -chúng tôi là công ty chuyên thiết kế tư vấn sản xuất phần mềm .<br><a href="about.php">Đọc tiếp</a></p>
 
             </div>
             <div class="col-lg-5 col-lg-offset-1 col-sm-3 recommended">
-                <h3>Recommended Properties</h3>
+                <h3>Gợi Ý</h3>
                 <div id="myCarousel" class="carousel slide">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -265,36 +289,36 @@
                             <div class="row">
                                 <div class="col-lg-4"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/></div>
                                 <div class="col-lg-8">
-                                    <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                                    <p class="price">$300,000</p>
-                                    <a href="property-detail.php" class="more">More Detail</a> </div>
+                                    <h5><a href="property-detail.php">Nhà Trọ-Đơn</a></h5>
+                                    <p class="price">3,000,000</p>
+                                    <a href="property-detail.php" class="more">Chi tiết</a> </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
                                 <div class="col-lg-4"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/></div>
                                 <div class="col-lg-8">
-                                    <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                                    <p class="price">$300,000</p>
-                                    <a href="property-detail.php" class="more">More Detail</a> </div>
+                                    <h5><a href="property-detail.php">Nhà Trọ-Đôi</a></h5>
+                                    <p class="price">5,000,000</p>
+                                    <a href="property-detail.php" class="more">Chi tiết</a> </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
                                 <div class="col-lg-4"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
                                 <div class="col-lg-8">
-                                    <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                                    <p class="price">$300,000</p>
-                                    <a href="property-detail.php" class="more">More Detail</a> </div>
+                                    <h5><a href="property-detail.php">Nhà Nguyên Căn</a></h5>
+                                    <p class="price">7,000,000</p>
+                                    <a href="property-detail.php" class="more">Chi tiết</a> </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
                                 <div class="col-lg-4"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
                                 <div class="col-lg-8">
-                                    <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                                    <p class="price">$300,000</p>
-                                    <a href="property-detail.php" class="more">More Detail</a> </div>
+                                    <h5><a href="property-detail.php">Căn Hộ</a></h5>
+                                    <p class="price">15,000,000</p>
+                                    <a href="property-detail.php" class="more">Chi tiết</a> </div>
                             </div>
                         </div>
                     </div>
