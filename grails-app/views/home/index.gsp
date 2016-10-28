@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a href="index.php"><img src="images/logo.png" alt="LOGO"></a>
+            <a href="index.php" style="padding-left: 5%;"><img src="images/logo.png" alt="LOGO"></a>
         </div>
         <div id="my-navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right" style="padding-top: 1%;padding-right: 5%;">
