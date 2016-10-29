@@ -27,4 +27,8 @@ class ChuTro {
         version(false)
         table('CHU_TRO')
     }
+
+    String getHoTen() {
+        return hoTenDem + " " + ten
+    }
 }

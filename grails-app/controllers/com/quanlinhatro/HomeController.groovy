@@ -15,6 +15,7 @@ class HomeController extends BaseController {
     }
     
     def start() {
+        render(view: 'start', model: [chuTro: chuTro])
     }
 
     def dashboard() {

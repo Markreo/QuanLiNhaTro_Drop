@@ -8,12 +8,14 @@ class BaseController {
 
     def springSecurityService
     User user
+    ChuTro chuTro
 
 
     def beforeInterceptor = {
         user = springSecurityService.currentUser as User
         if (user) {
             session.user = user
+            chuTro = ChuTro.findByTaiKhoan(user)
         }
     }
 }
