@@ -6,13 +6,14 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
+
 <html>
 <head>
     <title>Hệ Thống Nhà Trọ</title>
     <link rel="icon" href="images/home.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="${resource(dir: 'realestate/bootstrap/css', file: 'bootstrap.css')}" rel="stylesheet"/>
     <link href="${resource(dir: 'realestate', file: 'style.css')}" rel="stylesheet"/>
     %{--<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>--}%

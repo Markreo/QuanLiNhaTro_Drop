@@ -51,7 +51,7 @@
                     </form>
                 </div>
                 <div class="bottom text-center">
-                    Chưa có tài khoản? <a href="#"><b>Đăng kí ngay</b></a>
+                    Chưa có tài khoản? <a href="\login\register.gsp"><b>Đăng kí ngay</b></a>
                 </div>
             </div>
         </li>

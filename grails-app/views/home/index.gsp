@@ -44,16 +44,16 @@ class="banner-search"
 POSITION: relative;
     padding-top: 10%;
 -->
-    <div class="banner-search" style="position: relative;padding-top: 12%;">
+    <div class="banner-search">
     <div class="container">
         <!-- banner -->
         <!--<h3>Buy, Sale & Rent</h3>-->
         <div class="searchbar">
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
-                   <div class="col-lg-3 col-sm-3">
+                   <div class="col-lg-2 col-sm-2">
                    </div>
-                   <div class="col-lg-9 col-sm-9">
+                   <div class="col-lg-10 col-sm-10">
                         <div class="col-md-9">
                             
                             <div class="col-md-9">
@@ -269,12 +269,12 @@ POSITION: relative;
     </div>
     <div class="spacer">
         <div class="row">
-            <div class="col-lg-6 col-sm-9 recent-view">
+            <div class="col-lg-6 col-sm-6 recent-view">
                 <h3>Về Chúng Tôi</h3>
                 <p>Công ty HG -chúng tôi là công ty chuyên thiết kế tư vấn sản xuất phần mềm .<br><a href="about.php">Đọc tiếp</a></p>
 
             </div>
-            <div class="col-lg-5 col-lg-offset-1 col-sm-3 recommended">
+            <div class="col-lg-6 col-sm-6 recommended">
                 <h3>Gợi Ý</h3>
                 <div id="myCarousel" class="carousel slide">
                     <ol class="carousel-indicators">
