@@ -17,8 +17,7 @@
     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
     <link href="${resource(dir: 'assets/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
     <link href="${resource(dir: 'assets/css', file: 'weather-icons.min.css')}" rel="stylesheet"/>
-    %{--<link href="${resource(dir: 'assets/css', file: 'qlnhatro.css')}" rel="stylesheet"/>--}%
-    <link href="/assets/css/qlnhatro.css" rel="text/css">
+    <link href="${resource(file: 'qlnhatro.css')}" rel="stylesheet"/>
     <!--Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300"
           rel="stylesheet" type="text/css">

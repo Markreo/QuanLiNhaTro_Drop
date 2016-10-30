@@ -1,0 +1,38 @@
+.page-body .page{
+    padding: 10px;
+}
+.page-body .page .group {
+    border: 1px solid #dbdbdb;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top:10px;
+    background: white
+}
+
+.page-body .page .group .group-action {
+    float: right;
+    display: none
+}
+
+.page-body .page .group .tab {
+    margin-top: -20px;
+    border-left:4px solid #2dc3e8;
+    position: absolute;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom,#fff 0,#ededed 100%);
+    padding: 5px 15px 5px 5px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1)
+
+}
+
+.page-body .page .group .tab .tab-title {
+    margin: 0px;
+    font-size: 16px;
+    color: #717171
+}
+
+.page-body .page .group .content {
+    margin-top: 10px;
+    padding: 8px;
+}

@@ -13,35 +13,38 @@ class ChuTroController extends BaseController {
         def chuTro = ChuTro.get(id)
         if(chuTro)
         {
-            render(view: 'edit', model: [chuTro: chuTro])
+            render(template: 'edit', model: [chuTro: chuTro])
         }
     }
 
     def save(long id) {
         println("params: " + params)
-        def chuTro = id ? ChuTro.get(id) : new ChuTro(params)
+        def chuTroInstance = id ? ChuTro.get(id) : new ChuTro(params)
         if(id) {
             params.remove("id")
-            chuTro.properties = params
+            chuTroInstance.properties = params
         }
-        chuTro.taiKhoan = user
-        if(chuTro.hasErrors() || !chuTro.save(flush: true)) {
-            println("err")
+        chuTroInstance.taiKhoan = user
+        if(chuTroInstance.hasErrors() || !chuTroInstance.save(flush: true)) {
+            println("err " + chuTroInstance.errors)
+
         }
         else {
             //save Khu
             println "save"
             def tens = params.list("khutro.ten")
             def diaChis = params.list("khutro.diaChi")
-            println(tens)
-            println(diaChis)
             tens.eachWithIndex {ten, int index ->
                 println(ten)
                 println(diaChis[index])
-                chuTro.addToKhus(ten: ten, diaChi: diaChis[index]).save()
+                chuTroInstance.addToKhus(ten: ten, diaChi: diaChis[index]).save()
             }
-            chuTro.save(flush: true)
-
+            chuTroInstance.save(flush: true)
+            render(template: 'show',model: [chuTro: chuTroInstance])
         }
+    }
+
+    def show() {
+        render(template: 'show', model: [chuTro: chuTro])
     }
 }
