@@ -47,4 +47,8 @@ class KhuController extends BaseController {
 
         render(result);
     }
+
+    def show() {
+        render (template: 'show')
+    }
 }

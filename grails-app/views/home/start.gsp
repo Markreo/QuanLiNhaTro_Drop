@@ -4,7 +4,7 @@
   and open the template in the editor.
 -->
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="com.quanlinhatro.Khu" contentType="text/html;charset=UTF-8" %>
 
 <html>
     <head>
@@ -14,8 +14,15 @@
     </head>
     <body>
     <div class="page-body">
-        <div class="col-md-8 col-md-offset-1">
+
+        <div id="show-chuTro">
             <g:render template="/chuTro/show" model="[chuTro:chuTro]"/>
+        </div>
+        <div id="show-khu">
+            <g:render template="/khu/show" model="[chuTro:chuTro]"/>
+        </div>
+        <div id="show-phongTro">
+            <g:render template="/phongTro/show" model="[khus:Khu.list()]"/>
         </div>
     </div>
     <script type="text/javascript">

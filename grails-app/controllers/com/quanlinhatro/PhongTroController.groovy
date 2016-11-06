@@ -15,9 +15,7 @@ class PhongTroController extends BaseController {
         respond PhongTro.list(params), model:[phongTroInstanceCount: PhongTro.count()]
     }
 
-    def show(PhongTro phongTroInstance) {
-        respond phongTroInstance
-    }
+
 
     def create() {
         respond new PhongTro(params)
@@ -100,5 +98,9 @@ class PhongTroController extends BaseController {
             }
             '*'{ render status: NOT_FOUND }
         }
+    }
+
+    def show() {
+        render (template: 'show')
     }
 }
