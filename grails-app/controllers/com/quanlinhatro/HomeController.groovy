@@ -21,4 +21,14 @@ class HomeController extends BaseController {
     def dashboard() {
 
     }
+
+    @Secured('permitAll')
+    def buysalerent() {
+
+    }
+
+    @Secured('permitAll')
+    def register() {
+
+    }
 }

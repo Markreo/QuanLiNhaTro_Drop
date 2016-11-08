@@ -88,10 +88,10 @@
 
             <div class="col-lg-3 col-sm-3">
                 <h4>Theo dõi</h4>
-                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="https://facebook.com" target="_blank"><img src="${resource(dir: 'images', file: 'facebook.png')}" alt="facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="${resource(dir: 'images', file: 'twitter.png')}" alt="twitter"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="${resource(dir: 'images', file: 'linkedin.png')}" alt="linkedin"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="${resource(dir: 'images', file: 'instagram.png')}" alt="instagram"></a>
             </div>
 
             <div class="col-lg-3 col-sm-3">
@@ -164,7 +164,7 @@
                 <div class="col-sm-6">
                     <h4>Đăng kí người dùng mới</h4>
                     <p>Thử nghiệm ứng dụng quản lí phòng trọ</p>
-                    <button type="submit" class="btn btn-info"  onclick="window.location.href='register.php'">Đăng kí</button>
+                    <button type="submit" class="btn btn-info"  onclick="window.location.href='${createLink(controller: 'home', action: 'register')}'">Đăng kí</button>
                 </div>
 
             </div>

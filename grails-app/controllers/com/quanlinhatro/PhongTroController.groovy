@@ -1,6 +1,6 @@
 package com.quanlinhatro
 
-
+import grails.plugin.springsecurity.annotation.Secured
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -102,5 +102,9 @@ class PhongTroController extends BaseController {
 
     def show() {
         render (template: 'show')
+    }
+
+    @Secured('permitAll')
+    def detail() {
     }
 }
