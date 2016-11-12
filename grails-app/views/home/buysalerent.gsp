@@ -16,7 +16,7 @@
 <!-- banner -->
 <div class="inside-banner">
     <div class="container">
-        <span class="pull-right"><a href="index.php">Home</a> / Buy, Sale & Rent</span>
+        <span class="pull-right"><a href="/QuanLiNhaTro/">Home</a> / Buy, Sale & Rent</span>
         <h2>Buy, Sale & Rent</h2>
     </div>
 </div>

@@ -17,8 +17,8 @@
                 <div class="col-md-12">
                     Đăng nhập bằng
                     <div class="social-buttons">
-                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                        <a href="https://www.facebook.com" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="https://twitter.com/" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                     </div>
                     hoặc
 
