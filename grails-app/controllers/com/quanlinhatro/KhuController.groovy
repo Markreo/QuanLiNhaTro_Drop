@@ -51,4 +51,8 @@ class KhuController extends BaseController {
     def show() {
         render (template: 'show')
     }
+
+    def view(long id) {
+        render (template: 'view', model:[khu: id ? Khu.get(id) : new Khu()])
+    }
 }

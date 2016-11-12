@@ -37,9 +37,16 @@
     <script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
     <script src="${resource(dir: 'assets/js', file: 'paginate.js')}"></script>
     <script src="${resource(dir: 'assets/js/datatable', file: 'jquery.dataTables.js')}"></script>
-
+    <script src="${resource(dir: 'assets/js/fuelux/wizard', file: 'wizard-custom.js')}"></script>
+    <script src="${resource(dir: 'assets/js/toastr', file: 'toastr.js')}"></script>
     <!--Beyond Scripts-->
     <script src="${resource(dir: 'assets/js', file: 'beyond.min.js')}"></script>
+    <script>
+        $(document).on("click", "#sidebar-collapse", function () {
+            console.log("abc")
+            $("#sidebar").toggleClass(" menu-compact");
+        })
+    </script>
 </head>
 
 <body>

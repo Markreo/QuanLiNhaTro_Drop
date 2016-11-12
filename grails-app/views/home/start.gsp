@@ -21,8 +21,8 @@
         <div id="show-khu">
             <g:render template="/khu/show" model="[chuTro:chuTro]"/>
         </div>
-        <div id="show-phongTro">
-            <g:render template="/phongTro/show" model="[khus:Khu.list()]"/>
+        <div id="khutro-view">
+            <g:render template="/khu/view"/>
         </div>
     </div>
     <script type="text/javascript">
