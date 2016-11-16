@@ -19,4 +19,8 @@ class BaseController {
             chuTro = ChuTro.findByTaiKhoan(user)
         }
     }
+
+    def notAjax() {
+
+    }
 }

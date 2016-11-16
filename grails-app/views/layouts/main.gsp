@@ -56,10 +56,11 @@
         <div class="page-container">
             <g:render template="/layouts/sidebar"/>
             <div class="page-content">
-                <g:layoutBody/>
+                <div class="page-body" id="page-body">
+                    <g:layoutBody/>
+                </div>
             </div>
         </div>
-        <div id="chatboxs-bound" style="position: fixed; bottom: 0; right: 0;"></div>
     </div>
     <g:render template="/layouts/footer"/>
 </sec:ifLoggedIn>

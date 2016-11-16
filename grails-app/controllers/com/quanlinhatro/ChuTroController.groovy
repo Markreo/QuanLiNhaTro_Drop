@@ -2,11 +2,15 @@ package com.quanlinhatro
 
 class ChuTroController extends BaseController {
     def index () {
-        redirect(action: 'list')
+        if(chuTro) {
+            redirect(action:'view')
+        } else {
+            render (view : 'edit', model: [chuTro: new ChuTro()])
+        }
     }
 
     def create() {
-        render (view : 'edit', model: [chuTro: new ChuTro()])
+        render(view: '/base/notAjax', model:[template: 'edit',map: [chuTro: new ChuTro()]])
     }
 
     def edit(long id) {
@@ -29,22 +33,14 @@ class ChuTroController extends BaseController {
             println("err " + chuTroInstance.errors)
 
         }
-        else {
-            //save Khu
-            println "save"
-            def tens = params.list("khutro.ten")
-            def diaChis = params.list("khutro.diaChi")
-            tens.eachWithIndex {ten, int index ->
-                println(ten)
-                println(diaChis[index])
-                chuTroInstance.addToKhus(ten: ten, diaChi: diaChis[index]).save()
-            }
-            chuTroInstance.save(flush: true)
-            render(template: 'show',model: [chuTro: chuTroInstance])
-        }
+        render(template: 'show', model: [chuTro: chuTroInstance])
     }
 
-    def show() {
-        render(template: 'show', model: [chuTro: chuTro])
+    def view() {
+        if(request.xhr) {
+            render(template: 'show', model: [chuTro: chuTro])
+        } else {
+            render(view: '/base/notAjax', model:[template: 'show',map: [chuTro: chuTro]])
+        }
     }
 }

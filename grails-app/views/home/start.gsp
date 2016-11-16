@@ -9,22 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="layout" content="main"/>
+        %{--<meta name="layout" content="main"/>--}%
         <title></title>
     </head>
     <body>
-    <div class="page-body">
 
-        <div id="show-chuTro">
-            <g:render template="/chuTro/show" model="[chuTro:chuTro]"/>
-        </div>
-        <div id="show-khu">
-            <g:render template="/khu/show" model="[chuTro:chuTro]"/>
-        </div>
-        <div id="khutro-view">
-            <g:render template="/khu/view"/>
-        </div>
+
+    <div>
+        <g:render template="/chuTro/show" model="[chuTro:chuTro]"/>
     </div>
+    <div id="show-khu">
+        <g:render template="/khu/show" model="[chuTro:chuTro]"/>
+    </div>
+    <div id="khutro-view">
+        <g:render template="/khu/view"/>
+    </div>
+
     <script type="text/javascript">
         $(document).ready(function () {
             var _self = $(this)
