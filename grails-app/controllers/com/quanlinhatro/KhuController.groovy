@@ -9,11 +9,34 @@ class KhuController extends BaseController {
     }
 
     def list() {
+        def khus = Khu.findAllByChuTro(chuTro)
+        if(khus) {
+            if(request.xhr) {
+                render(template: 'list', model: [khus: khus])
+            } else {
+                render(view: '/base/notAjax', model:[template: '/khu/list',map: [khus: khus]])
+            }
+        } else {
+            if(request.xhr) {
+                render(template: 'edit', model: [khu: new Khu()])
+            } else {
+                render(view: '/base/notAjax', model:[template: '/khu/edit',map: [khu: new Khu()]])
+            }
+        }
     }
 
-    def list2() {
+    def table() {
 
     }
+
+    def create() {
+        if(request.xhr) {
+            render(template: 'edit', model: [khu: new Khu()])
+        } else {
+            render(view: '/base/notAjax', model:[template: '/khu/edit',map: [khu: new Khu()]])
+        }
+    }
+
 
     def khus(){
         println("khus")

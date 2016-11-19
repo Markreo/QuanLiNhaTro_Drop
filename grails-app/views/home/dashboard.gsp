@@ -12,6 +12,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-
+content
 </body>
 </html>

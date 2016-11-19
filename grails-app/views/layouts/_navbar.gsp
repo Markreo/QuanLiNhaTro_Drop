@@ -3,11 +3,7 @@
         <div class="navbar-container">
             <!-- Navbar Barnd -->
             <div class="navbar-header pull-left">
-                <a href="#" class="navbar-brand">
-                    <small>
-
-                    </small>
-                </a>
+                <span style="text-align: center; vertical-align: middle; font-size: 20px;color: white">Quản lí nhà trọ</span>
             </div>
             <!-- /Navbar Barnd -->
             <!-- Sidebar Collapse -->
@@ -20,7 +16,7 @@
                 <div class="navbar-account">
                     <ul class="account-area">
                         <li>
-                            <a class=" dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" title="Notifications" href="#">
                                 <i class="icon fa fa-warning"></i>
                             </a>
                             <!--Notification Dropdown-->
@@ -110,7 +106,7 @@
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
                                 <li>
                                     <a href="#">
-
+                                        <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
                                         <div class="message">
                                             <span class="message-sender">
                                                 Divyia Austin
@@ -129,7 +125,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-
+                                        <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
                                         <div class="message">
                                             <span class="message-sender">
                                                 Bing.com
@@ -148,7 +144,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-
+                                        <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
                                         <div class="message">
                                             <span class="message-sender">
                                                 Nicolas
@@ -168,7 +164,6 @@
                             </ul>
                             <!--/Messages Dropdown-->
                         </li>
-
                         <li>
                             <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
                                 <i class="icon fa fa-tasks"></i>
@@ -180,7 +175,6 @@
                                     <i class="fa fa-tasks"></i>
                                     4 Tasks In Progress
                                 </li>
-
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
@@ -193,7 +187,6 @@
                                         </div>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
@@ -206,7 +199,6 @@
                                         </div>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
@@ -219,7 +211,6 @@
                                         </div>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
@@ -232,7 +223,6 @@
                                         </div>
                                     </a>
                                 </li>
-
                                 <li class="dropdown-footer">
                                     <a href="#">
                                         See All Tasks
@@ -250,7 +240,7 @@
                         <li>
                             <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                 <div class="avatar" title="View your public profile">
-
+                                    <img src="assets/img/avatars/adam-jansen.jpg">
                                 </div>
                                 <section>
                                     <h2><span class="profile"><span>David Stevenson</span></span></h2>
@@ -263,7 +253,7 @@
                                 <!--Avatar Area-->
                                 <li>
                                     <div class="avatar-area">
-
+                                        <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
                                         <span class="caption">Change Photo</span>
                                     </div>
                                 </li>

@@ -1,44 +1,4 @@
 <%@ page import="com.quanlinhatro.Khu" %>
-<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-    <div class="profile-container">
-        <div class="profile-header row" style="height: 175px; background: white; margin-top: 0">
-            <div class="col-lg-8 col-md-8 col-sm-12" style="height: 175px; border-right: 1px solid #eee;">
-               <div style="width: 100%;padding: 10px 0px">
-                   <div style="font-size: 20px;margin: 10px; display: inline">${khu.ten}</div>
-                   <a href="#" class="btn btn-palegreen btn-sm btn-follow">
-                       <i class="fa fa-check"></i>
-                       Following
-                   </a>
-               </div>
-                <div class="header-information">
-                    Nhà trọ sạch, đẹp, tiện nghi, phù hợp với tất cả đối tượng
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 0;background: white;margin-bottom: 40px">
-                <div class="row" style="padding:0px 10px">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="border-right: 1px solid #eee;margin: 20px 0 30px 0;text-align: center;padding-right: 16px;padding-left: 16px;">
-                        <div class="pink" style="font-size: 30px">83</div>
-                        <div>PHÒNG</div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="border-right: 1px solid #eee;margin: 20px 0 30px 0;text-align: center;">
-                        <div class="pink" style="font-size: 30px">500</div>
-                        <div>m<sup>2</sup></div>
-                    </div>
-                </div>
-                <div class="row"  style="padding:0px 10px">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 " style="border-right: 1px solid #eee;text-align: center; border-top: 1px solid #eee;min-height: 55px; padding-top: 10px">
-                        <i class="glyphicon glyphicon-map-marker"></i><br/> Quận 9
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="border-right: 1px solid #eee;text-align: center;  border-top: 1px solid #eee;min-height: 55px; padding-top: 10px">
-                        Giá:<br/> <strong>1.500.000đ</strong>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-
-    </div>
-</div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="row">
         <div class="col-xs-12">
@@ -80,6 +40,12 @@
                                         Quảng cáo
                                     </a>
                                 </li>
+                                <li class="">
+                                    <a data-toggle="tab" href="#ád" aria-expanded="false">
+                                        Quảng cáo2
+                                    </a>
+                                </li>
+
                             </ul>
                             <div class="tab-content tabs-flat no-padding">
                                 <div id="danhsachphong" class="tab-pane padding-5 animated fadeInUp active">
@@ -433,29 +399,29 @@
 </div>
 
 <script>
-   $(document).ready(function () {
-       $('#WiredWizard').wizard();
+    $(document).ready(function () {
+        $('#WiredWizard').wizard();
 
-       $("#loaihinh").on('change', function (event) {
-           var selected = $(this).val();
-           switch (selected) {
-               case 'DAYTRO': {
-                   $("#khutro-view-thongtinchitiet").html($("#khutro-view-thongtindaytro").html());
-                   break;
-               }
-               default: {
-                   console.log("default")
-                   $("#khutro-view-thongtinchitiet").html("");
-               }
-           }
-       })
-   })
+        $("#loaihinh").on('change', function (event) {
+            var selected = $(this).val();
+            switch (selected) {
+                case 'DAYTRO': {
+                    $("#khutro-view-thongtinchitiet").html($("#khutro-view-thongtindaytro").html());
+                    break;
+                }
+                default: {
+                    console.log("default")
+                    $("#khutro-view-thongtinchitiet").html("");
+                }
+            }
+        })
+    })
 </script>
 
 <div id="khutro-view-thongtindaytro" style="display: none">
     <div class="col-md-12">
         <div class="form-title">
-           Loại phòng trọ:
+            Loại phòng trọ:
         </div>
         <div class="row" rel="form">
             <div rel="group">
