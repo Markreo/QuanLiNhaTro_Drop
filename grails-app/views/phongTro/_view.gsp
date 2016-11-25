@@ -1,0 +1,1 @@
+<img src="https://startbootstrap.com/img/templates/sb-admin-2.jpg"/>

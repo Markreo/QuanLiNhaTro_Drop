@@ -15,20 +15,24 @@
                 <span class="menu-text"> Dashboard </span>
             </a>
         </li>
-        <!--Databoxes-->
         <li>
             <a href="${createLink(controller: 'chuTro', action: 'index')}" rel='menu'>
                 <i class="menu-icon glyphicon glyphicon-tasks"></i>
                 <span class="menu-text"> Chủ trọ </span>
             </a>
         </li>
-        <!--Widgets-->
         <li>
             <a href="${createLink(controller: 'khu', action: 'index')}" rel='menu'>
                 <i class="menu-icon fa fa-th"></i>
                 <span class="menu-text"> Khu/Dãy trọ </span>
             </a>
         </li>
+    <li>
+        <a href="${createLink(controller: 'phongTro', action: 'index')}" rel='menu'>
+            <i class="menu-icon fa fa-th"></i>
+            <span class="menu-text"> Phòng Trọ </span>
+        </a>
+    </li>
         <!--UI Elements-->
         <li>
             <a href="#" class="menu-dropdown">

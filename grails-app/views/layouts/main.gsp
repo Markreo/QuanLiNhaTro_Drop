@@ -23,10 +23,6 @@ Purchase: http://wrapbootstrap.com
     <link href="${resource(dir: 'assets/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
     <link href="${resource(dir: 'assets/css', file: 'weather-icons.min.css')}" rel="stylesheet"/>
 
-
-    <!--Fonts-->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <!--Beyond styles-->
     <link href="${resource(dir: 'assets/css', file: 'beyond.min.css')}" rel="stylesheet"/>
     <link href="${resource(dir: 'assets/css', file: 'demo.min.css')}" rel="stylesheet" />
@@ -34,8 +30,22 @@ Purchase: http://wrapbootstrap.com
     <link href="${resource(dir: 'assets/css', file: 'animate.min.css')}" rel="stylesheet" />
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
 
+    <!--Basic Scripts-->
+    <script src="${resource(dir: 'assets/js', file: 'jquery.min.js')}"></script>
+    <script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
+    <script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
+
     <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
     <script src="${resource(dir: 'assets/js', file: 'skins.min.js')}"></script>
+    <!--Beyond Scripts-->
+    <script src="${resource(dir: 'assets/js', file: 'beyond.js')}"></script>
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="${resource(dir: 'assets/js/fuelux/wizard', file: 'wizard-custom.js')}"></script>
+
 </head>
 <!-- /Head -->
 <!-- Body -->
@@ -104,14 +114,6 @@ Purchase: http://wrapbootstrap.com
     <!-- Main Container -->
 
 </div>
-
-<!--Basic Scripts-->
-<script src="${resource(dir: 'assets/js', file: 'jquery.min.js')}"></script>
-<script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
-<script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
-
-<!--Beyond Scripts-->
-<script src="${resource(dir: 'assets/js', file: 'beyond.js')}"></script>
 
 </body>
 <!--  /Body -->

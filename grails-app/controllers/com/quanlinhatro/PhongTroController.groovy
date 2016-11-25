@@ -11,8 +11,7 @@ class PhongTroController extends BaseController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond PhongTro.list(params), model:[phongTroInstanceCount: PhongTro.count()]
+        redirect(action: 'table')
     }
 
 
@@ -106,5 +105,15 @@ class PhongTroController extends BaseController {
 
     @Secured('permitAll')
     def detail() {
+    }
+
+    def table(long id) {
+        //get khu
+        render(template: 'table', model:[phongs: PhongTro.list()])// khu: khuInstance
+    }
+
+    def view(long id) {
+        //get phongInstance
+        render(template: 'view', model:[ phong: new PhongTro()])// khu: khuInstance
     }
 }
