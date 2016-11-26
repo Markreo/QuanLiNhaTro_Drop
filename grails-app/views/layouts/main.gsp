@@ -30,22 +30,53 @@ Purchase: http://wrapbootstrap.com
     <link href="${resource(dir: 'assets/css', file: 'animate.min.css')}" rel="stylesheet" />
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
 
-    <!--Basic Scripts-->
     <script src="${resource(dir: 'assets/js', file: 'jquery.min.js')}"></script>
-    <script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
-    <script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
-
-    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-    <script src="${resource(dir: 'assets/js', file: 'skins.min.js')}"></script>
-    <!--Beyond Scripts-->
-    <script src="${resource(dir: 'assets/js', file: 'beyond.js')}"></script>
 
     <!--Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
     <script src="${resource(dir: 'assets/js/fuelux/wizard', file: 'wizard-custom.js')}"></script>
+    %{--<script>
+        console.log($(document).find('#fullscreen-toggler'))
+        $(document)
+                .on('click', '#fullscreen-toggler', function (e) {
+                    var element = document.documentElement;
+                    if (!$('body')
+                                    .hasClass("full-screen")) {
 
+                        $('body')
+                                .addClass("full-screen");
+                        $('#fullscreen-toggler')
+                                .addClass("active");
+                        if (element.requestFullscreen) {
+                            element.requestFullscreen();
+                        } else if (element.mozRequestFullScreen) {
+                            element.mozRequestFullScreen();
+                        } else if (element.webkitRequestFullscreen) {
+                            element.webkitRequestFullscreen();
+                        } else if (element.msRequestFullscreen) {
+                            element.msRequestFullscreen();
+                        }
+
+                    } else {
+
+                        $('body')
+                                .removeClass("full-screen");
+                        $('#fullscreen-toggler')
+                                .removeClass("active");
+
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitExitFullscreen) {
+                            document.webkitExitFullscreen();
+                        }
+
+                    }
+                });
+    </script>--}%
 </head>
 <!-- /Head -->
 <!-- Body -->
@@ -114,7 +145,15 @@ Purchase: http://wrapbootstrap.com
     <!-- Main Container -->
 
 </div>
+<!--Basic Scripts-->
 
+<script src="${resource(dir: 'assets/js', file: 'bootstrap.min.js')}"></script>
+<script src="${resource(dir: 'assets/js/slimscroll', file: 'jquery.slimscroll.min.js')}"></script>
+
+<!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+<script src="${resource(dir: 'assets/js', file: 'skins.min.js')}"></script>
+<!--Beyond Scripts-->
+<script src="${resource(dir: 'assets/js', file: 'beyond.js')}"></script>
 </body>
 <!--  /Body -->
 </html>

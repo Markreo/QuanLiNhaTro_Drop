@@ -16,13 +16,20 @@
                 $("#page-body").html(html)
             })
         })
+
+        $("a[rel='phongTro-create']").on('click', function (event) {
+            var khu_id = '${'get phontro.id'}';
+            $.post('${createLink(controller: 'phongTro',action: 'create')}', {id: khu_id}, function (html) {
+                $("#page-body").html(html)
+            })
+        })
     </script>
 </head>
 <body>
 <div class="col-xs-12 col-md-12">
     <div class="well">
-
         <table id="table-danhsachphongtro" class="table table-hover">
+            <a class="btn btn-default" rel="phongTro-create">Tạo thêm phòng trọ</a>
             <thead style="border-bottom: 4px solid #ffce55">
             <tr>
                 <th>
